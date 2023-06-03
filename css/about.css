@@ -1,0 +1,427 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');  */
+/* *{ 
+    font-family: 'Poppins', sans-serif;
+/* } */
+
+:root{
+    --blue: #0f0f67;
+    --green: #0b5042;
+    --black: rgb(18, 17, 17);
+   --light-color: #777;
+   --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+   --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, 0.2);
+   /* --blue: #0f0f67; */
+    /* border: .2rem solid var(--green); */
+}
+ *{ 
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    outline: none; border: o;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+     text-decoration: none; 
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html{ 
+    font-size: 65.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+ } 
+ section{
+    padding: 2rem 9%;
+}
+
+ /* section:nth-child(even){  
+    background: #f5f5f5 ;
+ /* }  */
+.header{
+    padding: 1rem 8%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--blue);
+    color: #fff
+}
+
+.header .navbar{
+    font-size: 1.7rem;
+    color: var(--blue); 
+    margin-left: 2rem;
+   
+    /* margin: 20px; */
+      display: inline-block; 
+     
+    
+}
+.header .logo{
+    font-size: 2.5rem;
+    color: #fff;
+    text-decoration: none;
+
+    
+}
+/* .header .navbar { 
+    font-size: 1.4rem;
+    color: #fff;
+    margin-left: 4rem;
+     display: inline-block; 
+     
+/* } */
+.header .navbar a{
+     text-decoration: none; 
+    color: #fff; 
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    display: inline-block;
+    /* font-weight: 500; */
+
+
+}
+
+.header .navbar a:hover{
+    background-color: var(--green);
+}
+/* .navbar-navv  { 
+    font-size: 1.4rem;
+     color: #fff; 
+     margin-left: 2rem; 
+     }
+.navbar-navv a{
+     text-decoration: none; 
+     color: #fff; 
+     /* font-size: 1.4rem; */
+     /* margin-left: 2rem; 
+     font-size: 1.7rem;
+    display: inline-block;
+    }
+.navbar-navv a:hover{
+    /* color: var(--green);} */
+
+
+
+/* Navbar-navv1 */
+.navbar-navv1 {
+    /* overflow: hidden;   */
+   background-color: var(--blue);
+   /* font-family: Arial; */
+   display: inline-block;
+    margin-left: 2rem;  
+    
+ }
+ 
+ /* Links inside the navbar */
+ .navbar-navv1 a {
+    /* float: left; */
+   /* font-size: 1.7rem; 
+   color: #fff; 
+   text-align: center;
+    padding: 14px 16px; 
+   text-decoration: none;
+   /* display: inline-block; */
+
+   text-decoration: none; 
+    color: #fff; 
+    /* font-size: 1.4rem; */
+     /* margin-left: 2rem;  */
+    font-size: 1.7rem;
+   display: inline-block;  
+   padding:  14px;
+   text-align: center; 
+   /* font-weight: 500; */
+   
+   
+ }
+ 
+ 
+ /* Links inside the navbar */
+ 
+ /* The dropdown container */
+ .dropdown {
+   float: left;
+   /* overflow: hidden; */
+ }
+ 
+ /* Dropdown button */
+ .dropdown .dropbtn {
+   font-size: 1.7rem;
+    color: #fff; 
+    border: none;  
+   outline: none; 
+   /* color: white; */
+   padding: 14px 16px; 
+    background-color: inherit; 
+   /* font-family: inherit; */
+    /* Important for vertical align on mobile phones */
+   margin: 0; 
+    /* Important for vertical align on mobile phones */
+    /* font-weight: 500; */
+ }
+ 
+ /* Add a red background color to navbar links on hover */
+ .navbar-navv1 a:hover, .dropdown:hover .dropbtn {
+   background-color: var(--green);
+   color: #fff;
+ }
+ 
+ /* Dropdown content (hidden by default) */
+ .dropdown-content {
+    display: none; 
+   position: absolute;
+background-color: #f9f9f9; 
+   min-width: 190px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+ 
+ /* Links inside the dropdown */
+ .dropdown-content a {
+   float: none;
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+ 
+ /* Add a grey background color to dropdown links on hover */
+ .dropdown-content a:hover {
+   background-color: gray;
+   color: var(--black);
+ }
+ 
+ /* Show the dropdown menu on hover */
+ .dropdown:hover .dropdown-content {
+  display: block; 
+  
+ }
+
+ /* navbar-navv1 end */
+#menu-btn{
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+     display: none; 
+}
+.home{
+    display: flex; 
+    align-items: center;
+     flex-wrap: wrap; 
+    gap: 1.5rem;
+    padding-top: 10rem;
+}
+ .home .image{ 
+    flex: 1 1 45rem;
+   
+}
+.home .image img{
+    width: 100%;
+   
+}
+
+.home .content{
+    flex: 1 1 45rem;
+}
+.home .content h3{
+    font-size:  4.5rem;
+    color: var(--blue);
+    line-height: 1.8;
+    text-shadow: var(--text-shadow);
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+}
+.home .content p{
+    font-size:  1.7rem;
+    color: var(--light-color);
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+/* *{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+/* } */
+
+.carousel-caption p {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.carousel-caption h2 {
+    color: black;
+}
+
+
+.copyright-footer {
+    display: flex;
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--blue);
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+
+}
+
+.containerrr {
+    padding: 70px;
+    margin-left: 25%;
+    color: var(--green)
+
+}
+
+.footer-top {
+    background-color: rgb(222, 222, 222);
+
+}
+.footer-top li{
+    list-style: none;
+}
+.containerrr a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: large;
+
+}
+
+.carousel-item img{
+    filter: brightness(55%) saturate(150%);
+}
+.members{
+        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.heading{
+    color: #060b3c;
+    text-align: center;
+}
+.img{
+    border-radius: 70px;
+    height: 140px;
+    width: 140px;
+}
+.card-body{
+    font-size: larger;
+    font-weight: 600;
+    color: #060b3c;
+}
+.card-text{
+    color: #04bb4a;
+}
+.underline{
+content: '';
+height: 4px;
+width: 100%;
+margin-top: 20px;
+background: linear-gradient(to right, #0113af 0%, #04bb4a 100%);
+
+} 
+.team-card{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 40px;
+   margin-top: 30px;
+}
+.featurette .lead{
+    color: #060b3c;
+    font-size: medium;
+}
+.featurette .featurette-heading{
+    font-size: 35px;
+    color: #060b3c;
+}
+
+@media screen and (max-width: 750px) {
+    .members{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.img{
+
+    border-radius: 75px;
+    height: 150px;
+    width: 150px;
+}
+.featurette .featurette-heading{
+   margin-top: 30px;
+}
+}
+
+
+
+/* navbar media queries */
+@media (max-width:991px){ 
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: initial;
+        background: var(--blue);
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:115%; right: 2rem;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        width: 30rem;
+        border: var(--border);
+        background: var(--blue);
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+    .header .navbar.active{
+        transform: scale(1);
+        opacity: 1;
+        transition: .2s ease-out;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        display: block;
+        margin:2.5rem;
+    }
+
+}
